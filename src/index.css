@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tabulator {
+  @apply font-sans border-gray-200;
+}
+
+.tabulator .tabulator-header {
+  @apply bg-gray-50 border-gray-200;
+}
+
+.tabulator .tabulator-header .tabulator-col {
+  @apply bg-gray-50 border-gray-200;
+}
+
+.tabulator .tabulator-header .tabulator-col-content {
+  @apply px-6 py-3;
+}
+
+.tabulator .tabulator-header .tabulator-col-title {
+  @apply text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.tabulator .tabulator-row {
+  @apply border-gray-200;
+}
+
+.tabulator .tabulator-row .tabulator-cell {
+  @apply px-6 py-4 text-gray-900;
+}
+
+.tabulator .tabulator-row:hover {
+  @apply bg-gray-50;
+}
+
+.tabulator input[type="color"] {
+  @apply w-10 h-10 p-1 rounded-md cursor-pointer;
+}
+
+.tabulator input[type="time"] {
+  @apply px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
